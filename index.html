@@ -6,753 +6,519 @@
     <title>Ahmed Darweesh | Manufacturing & Maintenance Senior Manager</title>
     <meta
       name="description"
-      content="Manufacturing and Maintenance Senior Manager with 18+ years of experience in high-volume manufacturing operations, Lean Manufacturing, and reliability engineering."
+      content="Manufacturing and Maintenance Senior Manager with 18+ years of leadership in high-volume manufacturing, Lean operations, reliability engineering, and automation."
     />
     <style>
       :root {
-        --bg-dark: #0a0e27;
-        --bg-main: #0f1428;
-        --bg-soft: #141c3d;
-        --panel-light: #1a2447;
-        --panel-dark: #0f1735;
-        --text-primary: #f0f4ff;
-        --text-secondary: #a8b3d8;
-        --accent-purple: #8b5cf6;
-        --accent-pink: #ec4899;
-        --accent-cyan: #06b6d4;
-        --accent-lime: #84cc16;
-        --accent-gold: #fbbf24;
-        --border-color: rgba(139, 92, 246, 0.15);
-        --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.3);
-        --shadow-md: 0 12px 35px rgba(139, 92, 246, 0.15);
-        --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.4);
+        --bg: #0b1020;
+        --bg-2: #10182b;
+        --panel: rgba(17, 25, 41, 0.9);
+        --panel-2: rgba(22, 31, 52, 0.92);
+        --panel-soft: rgba(31, 42, 68, 0.82);
+        --text: #edf3ff;
+        --muted: #a9b7d0;
+        --line: rgba(178, 195, 255, 0.11);
+        --purple: #8b5cf6;
+        --purple-2: #a855f7;
+        --pink: #ec4899;
+        --cyan: #22d3ee;
+        --teal: #0ea5e9;
+        --gold: #fbbf24;
+        --green: #34d399;
+        --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
       }
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #0a0e27 0%, #0f1735 25%, #141c3d 50%, #0f1428 100%);
-        color: var(--text-primary);
+        background:
+          radial-gradient(circle at top left, rgba(139, 92, 246, 0.12), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.12), transparent 24%),
+          linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+        color: var(--text);
         line-height: 1.7;
-        overflow-x: hidden;
       }
 
-      body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: 
-          radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-          radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.06) 0%, transparent 50%);
-        pointer-events: none;
-        z-index: -1;
-      }
-
-      img {
-        max-width: 100%;
-        display: block;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
 
       .container {
-        width: min(1100px, calc(100% - 32px));
+        width: min(1180px, calc(100% - 32px));
         margin: 0 auto;
       }
 
-      .section {
-        padding: 100px 0;
-      }
-
+      .section { padding: 92px 0; }
       .section-header {
-        text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 42px;
       }
-
-      .kicker {
+      .eyebrow {
         display: inline-block;
-        font-size: 0.75rem;
-        letter-spacing: 0.2em;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
         text-transform: uppercase;
-        background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        color: var(--cyan);
+        font-weight: 700;
         margin-bottom: 12px;
-        font-weight: 800;
       }
-
-      h1, h2, h3 {
-        line-height: 1.15;
+      h1, h2, h3, h4 {
+        line-height: 1.12;
+        letter-spacing: -0.03em;
       }
-
       h2 {
-        font-size: clamp(2rem, 4vw, 3.2rem);
-        margin-bottom: 12px;
-        color: var(--text-primary);
+        font-size: clamp(2rem, 4vw, 3.1rem);
+        margin-bottom: 14px;
       }
-
-      p {
-        color: var(--text-secondary);
-      }
+      h3 { font-size: clamp(1.2rem, 2vw, 1.7rem); }
+      p { color: var(--muted); }
 
       .topbar {
         position: sticky;
         top: 0;
-        backdrop-filter: blur(20px);
-        background: rgba(15, 20, 40, 0.7);
-        border-bottom: 1px solid var(--border-color);
-        z-index: 100;
+        z-index: 50;
+        backdrop-filter: blur(18px);
+        background: rgba(11, 16, 32, 0.75);
+        border-bottom: 1px solid var(--line);
       }
-
       .nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 72px;
+        min-height: 76px;
+        gap: 24px;
       }
-
       .brand {
         font-weight: 900;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--text-primary);
-        font-size: 1.1rem;
+        color: var(--text);
       }
-
       .brand span {
-        background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+        background: linear-gradient(135deg, var(--cyan), var(--purple));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
       }
-
       .nav-links {
         display: flex;
-        gap: 28px;
-        align-items: center;
+        gap: 24px;
         flex-wrap: wrap;
       }
-
       .nav-links a {
-        color: var(--text-secondary);
-        font-size: 0.95rem;
-        font-weight: 500;
-        transition: 0.3s ease;
+        color: var(--muted);
+        font-size: 0.92rem;
+        transition: 0.25s ease;
         position: relative;
       }
-
       .nav-links a::after {
-        content: '';
+        content: "";
         position: absolute;
-        bottom: -4px;
         left: 0;
+        bottom: -6px;
         width: 0;
         height: 2px;
-        background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
-        transition: width 0.3s ease;
+        background: linear-gradient(90deg, var(--cyan), var(--purple));
+        transition: width 0.25s ease;
       }
+      .nav-links a:hover { color: var(--text); }
+      .nav-links a:hover::after { width: 100%; }
 
-      .nav-links a:hover {
-        color: var(--text-primary);
+      .hero {
+        padding: 78px 0 52px;
       }
-
-      .nav-links a:hover::after {
-        width: 100%;
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.35fr 0.85fr;
+        gap: 34px;
+        align-items: center;
       }
-
+      .hero-copy h1 {
+        font-size: clamp(2.9rem, 5vw, 5rem);
+        margin-bottom: 18px;
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .hero-copy p {
+        max-width: 700px;
+        font-size: 1.08rem;
+        margin-bottom: 28px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
       .btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         border-radius: 12px;
-        padding: 14px 28px;
+        padding: 14px 24px;
         font-weight: 700;
-        border: 1.5px solid transparent;
-        transition: 0.3s ease;
-        cursor: pointer;
-        font-size: 0.95rem;
+        border: 1px solid transparent;
+        transition: 0.25s ease;
       }
-
       .btn-primary {
-        background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
-        color: var(--text-primary);
-        box-shadow: var(--shadow-md);
+        background: linear-gradient(135deg, var(--purple), var(--pink));
+        color: white;
+        box-shadow: var(--shadow);
       }
-
-      .btn-primary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
-      }
-
+      .btn-primary:hover { transform: translateY(-2px); }
       .btn-secondary {
-        border-color: var(--border-color);
-        background: rgba(139, 92, 246, 0.05);
-        color: var(--text-primary);
+        border-color: var(--line);
+        background: rgba(255,255,255,0.02);
+        color: var(--text);
       }
-
       .btn-secondary:hover {
-        background: rgba(139, 92, 246, 0.12);
-        border-color: var(--accent-purple);
-        transform: translateY(-2px);
+        border-color: rgba(139, 92, 246, 0.6);
+        background: rgba(139, 92, 246, 0.06);
       }
 
-      .hero {
-        padding: 100px 0 60px;
-      }
-
-      .hero-grid {
-        display: grid;
-        grid-template-columns: 1.2fr 0.9fr;
-        gap: 60px;
-        align-items: center;
-      }
-
-      .hero h1 {
-        font-size: clamp(3rem, 6.5vw, 5.2rem);
-        letter-spacing: -0.02em;
-        margin-bottom: 20px;
-        font-weight: 900;
-      }
-
-      .hero-title-main {
-        color: var(--text-primary);
-      }
-
-      .hero-title-accent {
-        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-
-      .hero-copy p {
-        font-size: 1.12rem;
-        max-width: 600px;
-        margin-bottom: 32px;
-        line-height: 1.8;
-      }
-
-      .hero-actions {
+      .metrics {
         display: flex;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-      }
-
-      .mini-stats {
-        display: flex;
-        gap: 50px;
+        gap: 24px;
         flex-wrap: wrap;
       }
-
-      .mini-stats div {
-        min-width: 130px;
+      .metric {
+        min-width: 140px;
       }
-
-      .mini-stats strong {
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
+      .metric strong {
         display: block;
-        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+        font-weight: 800;
+        background: linear-gradient(135deg, var(--cyan), var(--purple));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        font-weight: 900;
-        margin-bottom: 6px;
       }
-
-      .mini-stats span {
-        color: var(--text-secondary);
+      .metric span {
+        color: var(--muted);
         font-size: 0.9rem;
-        font-weight: 500;
       }
 
       .profile-card {
-        background: linear-gradient(135deg, rgba(26, 36, 71, 0.95), rgba(15, 23, 53, 0.95));
-        border: 1.5px solid var(--border-color);
-        border-radius: 28px;
+        background: linear-gradient(180deg, rgba(19, 29, 49, 0.95), rgba(12, 18, 32, 0.96));
+        border: 1px solid var(--line);
+        border-radius: 26px;
         overflow: hidden;
-        box-shadow: var(--shadow-lg);
-        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
       }
-
-      .profile-image {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.1));
-        border-bottom: 1.5px solid var(--border-color);
+      .profile-art {
         min-height: 320px;
         display: grid;
         place-items: center;
-        color: var(--text-primary);
         font-size: 7rem;
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.14), rgba(34, 211, 238, 0.08));
+        border-bottom: 1px solid var(--line);
       }
-
       .profile-info {
-        padding: 28px;
+        padding: 24px 24px 28px;
       }
-
       .profile-info h3 {
-        font-size: 1.6rem;
-        margin-bottom: 8px;
-        font-weight: 800;
+        font-size: 1.8rem;
+        margin-bottom: 4px;
       }
-
-      .role {
-        background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+      .title-tag {
+        color: var(--cyan);
         font-weight: 700;
         margin-bottom: 8px;
-        font-size: 0.95rem;
       }
-
-      .profile-info > p {
-        font-size: 0.95rem;
-        margin-bottom: 18px;
-      }
-
       .profile-meta {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 8px;
+        margin-top: 12px;
       }
-
-      .profile-meta div {
-        padding: 12px 0;
-        border-top: 1.5px solid var(--border-color);
+      .meta-item {
+        border-top: 1px solid var(--line);
+        padding-top: 12px;
       }
-
-      .profile-meta span {
+      .meta-item span {
         display: block;
-        color: var(--text-secondary);
-        font-size: 0.75rem;
-        letter-spacing: 0.1em;
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
+        color: var(--muted);
         margin-bottom: 6px;
+      }
+      .meta-item strong {
+        font-size: 0.9rem;
         font-weight: 600;
       }
+      .meta-item a { color: var(--text); }
+      .meta-item a:hover { color: var(--cyan); }
 
-      .profile-meta strong {
-        font-size: 0.85rem;
-        color: var(--text-primary);
-        word-break: break-word;
-      }
-
-      .profile-meta a {
-        color: var(--accent-purple);
-        transition: 0.3s ease;
-      }
-
-      .profile-meta a:hover {
-        color: var(--accent-pink);
-      }
-
-      .about-grid,
-      .experience-grid,
-      .contact-grid {
+      .two-col {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 24px;
       }
-
-      .about-panel,
-      .experience-card,
-      .contact-card,
-      .project-card,
-      .testimonial {
-        background: linear-gradient(135deg, rgba(26, 36, 71, 0.8), rgba(15, 23, 53, 0.8));
-        border: 1.5px solid var(--border-color);
+      .panel {
+        background: linear-gradient(180deg, rgba(19, 29, 49, 0.9), rgba(11, 16, 32, 0.95));
+        border: 1px solid var(--line);
         border-radius: 22px;
-        padding: 32px;
-        box-shadow: var(--shadow-md);
-        backdrop-filter: blur(10px);
+        padding: 28px;
+        box-shadow: var(--shadow);
       }
-
-      .about-panel p + p {
-        margin-top: 18px;
+      .summary-text {
+        font-size: 1.02rem;
+        margin-bottom: 16px;
       }
-
-      .about-panel h3 {
-        font-size: 1.3rem;
-        margin-bottom: 22px;
-        color: var(--text-primary);
-      }
-
-      .skill-list {
+      .chip-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px;
       }
-
-      .skill-list span {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.1));
-        border: 1px solid var(--border-color);
-        color: var(--text-primary);
-        padding: 10px 16px;
-        border-radius: 8px;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: 0.3s ease;
+      .chip {
+        background: rgba(139, 92, 246, 0.08);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        border-radius: 999px;
+        padding: 9px 14px;
+        font-size: 0.8rem;
+        color: var(--text);
+        line-height: 1;
       }
+      .chip:nth-child(3n) { border-color: rgba(34, 211, 238, 0.2); }
 
-      .skill-list span:hover {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(236, 72, 153, 0.2));
-        border-color: var(--accent-purple);
-      }
-
-      .experience-list,
-      .project-list,
-      .testimonial-list,
-      .contact-list {
+      .impact-grid {
         display: grid;
-        gap: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
       }
-
-      .job,
-      .project-card,
-      .testimonial {
-        background: linear-gradient(135deg, rgba(20, 28, 60, 0.9), rgba(15, 23, 53, 0.9));
-        border: 1.5px solid var(--border-color);
+      .impact-box {
+        background: linear-gradient(180deg, rgba(17, 25, 41, 0.9), rgba(15, 23, 39, 0.95));
+        border: 1px solid var(--line);
         border-radius: 18px;
-        padding: 28px;
-        backdrop-filter: blur(10px);
+        padding: 26px;
       }
-
-      .job-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        align-items: flex-start;
-        margin-bottom: 14px;
-      }
-
-      .job h3,
-      .project-card h3 {
+      .impact-box h3 {
         font-size: 1.3rem;
-        margin-bottom: 6px;
-        color: var(--text-primary);
-        font-weight: 800;
-      }
-
-      .job .meta,
-      .project-card .meta {
-        background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-size: 0.9rem;
-        font-weight: 700;
-      }
-
-      .job-location {
-        color: var(--text-secondary);
-        font-size: 0.85rem;
         margin-bottom: 8px;
       }
-
-      .job-header span {
-        color: var(--text-secondary);
-        font-size: 0.9rem;
-        font-weight: 500;
-        white-space: nowrap;
+      .impact-label {
+        color: var(--cyan);
+        font-size: 0.76rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 700;
       }
-
-      .job ul,
-      .project-card ul {
+      .impact-box ul {
         list-style: none;
-        padding-left: 0;
-        margin-top: 14px;
       }
-
-      .job li,
-      .project-card li {
+      .impact-box li {
         position: relative;
-        padding-left: 20px;
-        color: var(--text-secondary);
+        padding-left: 18px;
+        color: var(--muted);
         margin-top: 8px;
-        font-size: 0.95rem;
       }
-
-      .job li::before,
-      .project-card li::before {
+      .impact-box li::before {
         content: "▸";
         position: absolute;
         left: 0;
-        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: 900;
+        color: var(--cyan);
       }
 
-      .projects-grid {
+      .timeline {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 24px;
-      }
-
-      .project-card {
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-        transition: 0.3s ease;
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-        border-color: var(--accent-purple);
-        box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
-      }
-
-      .project-thumb {
-        min-height: 200px;
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.15));
-        border: 1.5px solid var(--border-color);
-        border-radius: 16px;
-        margin-bottom: 20px;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(6, 182, 212, 0.08));
-        color: var(--accent-purple);
-        font-size: 3.5rem;
-        font-weight: 900;
-        transition: 0.3s ease;
-      }
-
-      .project-card:hover .project-thumb {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.15));
-      }
-
-      .project-card .tags {
-        margin-top: 16px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .project-card .tags span {
-        background: rgba(139, 92, 246, 0.08);
-        color: var(--text-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        padding: 7px 12px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-      }
-
-      .testimonial-list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .testimonial {
-        padding: 28px;
-        position: relative;
-      }
-
-      .testimonial::before {
-        content: '"';
-        position: absolute;
-        top: 12px;
-        left: 20px;
-        font-size: 3rem;
-        color: var(--accent-purple);
-        opacity: 0.3;
-      }
-
-      .testimonial p {
-        position: relative;
-        z-index: 1;
-        font-style: italic;
-        margin-bottom: 0;
-      }
-
-      .testimonial strong {
-        display: block;
-        margin-top: 16px;
-        color: var(--text-primary);
-        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: 700;
-      }
-
-      .contact-card {
-        display: flex;
-        flex-direction: column;
         gap: 20px;
       }
+      .timeline-item {
+        position: relative;
+        background: linear-gradient(180deg, rgba(17, 25, 41, 0.9), rgba(11, 16, 32, 1));
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px 22px 22px 24px;
+        margin-left: 10px;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 24px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--cyan), var(--purple));
+        box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.12);
+      }
+      .timeline-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: flex-start;
+        margin-bottom: 8px;
+      }
+      .timeline-head h3 {
+        font-size: 1.2rem;
+      }
+      .timeline-company {
+        color: var(--cyan);
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .timeline-location {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+      .timeline-item ul {
+        list-style: none;
+      }
+      .timeline-item li {
+        position: relative;
+        color: var(--muted);
+        padding-left: 18px;
+        margin-top: 8px;
+      }
+      .timeline-item li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--purple);
+        font-size: 1.2rem;
+      }
+      .date-pill {
+        display: inline-block;
+        font-size: 0.78rem;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        color: var(--text);
+        background: rgba(255,255,255,0.02);
+        white-space: nowrap;
+      }
 
+      .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+      .skill-card {
+        background: linear-gradient(180deg, rgba(17, 25, 41, 0.9), rgba(11, 16, 32, 0.96));
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+      }
+      .skill-card h3 {
+        margin-bottom: 14px;
+      }
+      .skill-card .chip-list { gap: 8px; }
+      .skill-card .chip {
+        font-size: 0.76rem;
+        padding: 8px 12px;
+      }
+
+      .contact-wrap {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 22px;
+      }
+      .contact-list {
+        display: grid;
+        gap: 16px;
+      }
       .contact-item {
         display: flex;
-        gap: 16px;
+        gap: 14px;
         align-items: flex-start;
-        padding: 16px;
-        background: rgba(139, 92, 246, 0.05);
-        border: 1.5px solid var(--border-color);
-        border-radius: 14px;
-        transition: 0.3s ease;
+        background: linear-gradient(180deg, rgba(17,25,41,0.9), rgba(11,16,32,0.96));
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 16px 18px;
       }
-
-      .contact-item:hover {
-        background: rgba(139, 92, 246, 0.1);
-        border-color: var(--accent-purple);
-      }
-
-      .icon {
-        width: 48px;
-        height: 48px;
+      .contact-icon {
+        width: 42px;
+        height: 42px;
         border-radius: 12px;
         display: grid;
         place-items: center;
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.15));
-        border: 1.5px solid var(--border-color);
-        color: var(--accent-purple);
-        font-weight: 700;
-        font-size: 1.3rem;
-        flex-shrink: 0;
+        background: linear-gradient(135deg, rgba(139,92,246,0.16), rgba(34,211,238,0.12));
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        color: var(--cyan);
+        font-size: 1.2rem;
       }
-
       .contact-item h4 {
+        margin-bottom: 4px;
         font-size: 1rem;
-        margin-bottom: 6px;
-        color: var(--text-primary);
-        font-weight: 700;
       }
-
-      .contact-item p {
-        font-size: 0.9rem;
+      .contact-item p,
+      .contact-item a {
+        color: var(--muted);
+        font-size: 0.92rem;
       }
+      .contact-item a:hover { color: var(--text); }
 
       form {
         display: grid;
-        gap: 16px;
+        gap: 14px;
+        background: linear-gradient(180deg, rgba(17,25,41,0.9), rgba(11,16,32,0.96));
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 24px;
       }
-
       .input-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 14px;
       }
-
       input, textarea {
         width: 100%;
+        border: 1px solid var(--line);
         border-radius: 12px;
-        border: 1.5px solid var(--border-color);
-        background: rgba(26, 36, 71, 0.6);
-        color: var(--text-primary);
+        background: rgba(255,255,255,0.02);
+        color: var(--text);
         padding: 14px 16px;
         font: inherit;
-        transition: 0.3s ease;
       }
-
-      input::placeholder,
-      textarea::placeholder {
-        color: rgba(168, 179, 216, 0.5);
-      }
-
-      input:focus,
-      textarea:focus {
+      input::placeholder, textarea::placeholder { color: rgba(169, 183, 208, 0.7); }
+      input:focus, textarea:focus {
         outline: none;
-        border-color: var(--accent-purple);
-        background: rgba(26, 36, 71, 0.8);
+        border-color: rgba(139, 92, 246, 0.7);
         box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
       }
-
       textarea {
         min-height: 140px;
         resize: vertical;
       }
 
       footer {
-        border-top: 1.5px solid var(--border-color);
-        padding: 28px 0 40px;
+        padding: 24px 0 36px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
         text-align: center;
-        color: var(--text-secondary);
-        font-size: 0.9rem;
       }
 
-      .summary-text {
-        color: var(--text-secondary);
-        line-height: 1.8;
-        margin-bottom: 16px;
-      }
-
-      @media (max-width: 900px) {
+      @media (max-width: 920px) {
         .hero-grid,
-        .about-grid,
-        .experience-grid,
-        .contact-grid {
+        .two-col,
+        .contact-wrap,
+        .skill-grid,
+        .impact-grid {
           grid-template-columns: 1fr;
         }
-
-        .projects-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .testimonial-list {
-          grid-template-columns: 1fr;
-        }
-
         .nav {
           flex-direction: column;
           justify-content: center;
-          gap: 14px;
+          min-height: auto;
           padding: 18px 0;
         }
-
-        .nav-links {
-          justify-content: center;
-        }
+        .nav-links { justify-content: center; }
       }
 
-      @media (max-width: 640px) {
-        .section {
-          padding: 70px 0;
-        }
-
-        .hero {
-          padding-top: 60px;
-        }
-
-        .input-row {
-          grid-template-columns: 1fr;
-        }
-
-        .hero-actions {
-          flex-direction: column;
-          align-items: stretch;
-        }
-
-        .btn {
-          width: 100%;
-        }
-
-        .mini-stats {
-          gap: 30px;
-        }
-
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
+      @media (max-width: 620px) {
+        .section { padding: 80px 0; }
+        .hero { padding-top: 60px; }
+        .input-row { grid-template-columns: 1fr; }
+        .hero-actions { flex-direction: column; align-items: stretch; }
+        .btn { width: 100%; }
+        .metrics { display: grid; grid-template-columns: 1fr; }
+        .timeline-head { flex-direction: column; }
       }
     </style>
   </head>
@@ -760,11 +526,10 @@
     <header class="topbar">
       <div class="container nav">
         <a class="brand" href="#home">Ahmed <span>Darweesh</span></a>
-
         <nav class="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
           <a href="#impact">Impact</a>
+          <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -775,100 +540,101 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <div class="kicker">Manufacturing Leader</div>
+            <div class="eyebrow">Manufacturing Leader</div>
             <h1>
-              <span class="hero-title-main">Leading</span> <span class="hero-title-accent">operational excellence</span> <span class="hero-title-main">in high-volume manufacturing.</span>
+              Leading <span class="gradient-text">operational excellence</span><br />
+              in high-volume manufacturing.
             </h1>
             <p>
-              18+ years driving manufacturing transformation through Lean methodology, reliability engineering, and strategic team leadership. Delivered capacity growth, cost reduction, and quality improvements across complex multi-line operations at Samsung Electronics Egypt.
+              Senior manufacturing and maintenance leader with 18+ years of experience driving productivity, reliability, quality, and continuous improvement across complex factory operations. Proven track record in Lean Manufacturing, automation, TPM, and scaling production from startup to mass production.
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#impact">View Impact</a>
-              <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+              <a href="#impact" class="btn btn-primary">View Impact</a>
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
 
-            <div class="mini-stats">
-              <div>
+            <div class="metrics">
+              <div class="metric">
                 <strong>18+</strong>
-                <span>Years Experience</span>
+                <span>Years in manufacturing</span>
               </div>
-              <div>
+              <div class="metric">
                 <strong>320+</strong>
-                <span>Employees Led</span>
+                <span>Employees led</span>
               </div>
-              <div>
-                <strong>$500K+</strong>
-                <span>Annual Savings</span>
+              <div class="metric">
+                <strong>35%</strong>
+                <span>Downtime reduction</span>
               </div>
             </div>
           </div>
 
-          <div class="profile-card">
-            <div class="profile-image">🏭</div>
+          <aside class="profile-card">
+            <div class="profile-art">🏭</div>
             <div class="profile-info">
               <h3>Ahmed Darweesh</h3>
-              <div class="role">Manufacturing & Maintenance Senior Manager</div>
+              <div class="title-tag">Manufacturing & Maintenance Senior Manager</div>
               <p>Samsung Electronics Egypt</p>
 
               <div class="profile-meta">
-                <div>
+                <div class="meta-item">
                   <span>Location</span>
                   <strong>Beni Suef, Egypt</strong>
                 </div>
-                <div>
+                <div class="meta-item">
                   <span>Email</span>
                   <strong><a href="mailto:eng.ama2003@gmail.com">eng.ama2003@gmail.com</a></strong>
                 </div>
-                <div>
+                <div class="meta-item">
                   <span>Phone</span>
-                  <strong>+20 115 988 8350</strong>
+                  <strong><a href="tel:+201159888350">+20 115 988 8350</a></strong>
                 </div>
-                <div>
+                <div class="meta-item">
                   <span>LinkedIn</span>
-                  <strong><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">View Profile</a></strong>
+                  <strong><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">View profile</a></strong>
                 </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Professional Summary</div>
-            <h2>Transforming Manufacturing Operations at Scale</h2>
+            <div class="eyebrow">Professional Summary</div>
+            <h2>Transforming manufacturing operations at scale.</h2>
           </div>
 
-          <div class="about-grid">
-            <div class="about-panel">
+          <div class="two-col">
+            <div class="panel">
               <p class="summary-text">
                 Manufacturing and maintenance senior leader with 18+ years of experience in high-volume manufacturing, including 13+ years at Samsung Electronics Egypt. Leadership experience spans manufacturing operations, maintenance, production technology, quality engineering, product engineering, and in-house logistics across 42 production lines.
               </p>
               <p class="summary-text">
-                Managed organizations of up to 320 employees, engineering teams of 53, a current maintenance organization of 54, and annual CAPEX and spare-parts expenditure of approximately US$1.5M. Delivered 16% capacity growth, 35% lower machine downtime, 22% lower manufacturing defects, and approximately US$500K in annual operating savings through Lean Manufacturing, reliability improvement, automation, and cross-functional execution.
+                Managed organizations of up to 320 employees, engineering teams of 53, a current maintenance organization of 54, and annual CAPEX / spare-parts expenditure of approximately US$1.5M. Delivered 16% capacity growth, 35% lower machine downtime, 22% lower manufacturing defects, and approximately US$500K in annual operating savings through Lean Manufacturing, reliability improvement, automation, and cross-functional execution.
               </p>
             </div>
 
-            <div class="about-panel">
-              <h3>Core Competencies</h3>
-              <div class="skill-list">
-                <span>Manufacturing Operations</span>
-                <span>Maintenance Management</span>
-                <span>Lean Manufacturing</span>
-                <span>TPM & OEE</span>
-                <span>Reliability Engineering</span>
-                <span>Preventive Maintenance</span>
-                <span>Root Cause Analysis</span>
-                <span>Capacity Planning</span>
-                <span>Factory Automation</span>
-                <span>CAPEX Management</span>
-                <span>Quality Improvement</span>
-                <span>Cost Reduction</span>
-                <span>Team Leadership</span>
-                <span>Process Improvement</span>
-                <span>Equipment Commissioning</span>
+            <div class="panel">
+              <div class="eyebrow" style="margin-bottom:20px;">Core Competencies</div>
+              <div class="chip-list">
+                <span class="chip">Manufacturing Ops</span>
+                <span class="chip">Maintenance Management</span>
+                <span class="chip">Lean Manufacturing</span>
+                <span class="chip">TPM</span>
+                <span class="chip">OEE</span>
+                <span class="chip">Reliability Engineering</span>
+                <span class="chip">Preventive Maintenance</span>
+                <span class="chip">Predictive Maintenance</span>
+                <span class="chip">Root Cause Analysis</span>
+                <span class="chip">Capacity Planning</span>
+                <span class="chip">Factory Automation</span>
+                <span class="chip">CAPEX Management</span>
+                <span class="chip">Quality Improvement</span>
+                <span class="chip">Cost Reduction</span>
+                <span class="chip">Team Leadership</span>
               </div>
             </div>
           </div>
@@ -878,53 +644,49 @@
       <section id="impact" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Selected Career Impact</div>
-            <h2>Measurable Results Across Operations</h2>
+            <div class="eyebrow">Selected Career Impact</div>
+            <h2>Measured results that moved the business forward.</h2>
           </div>
 
-          <div class="experience-grid">
-            <div class="experience-list">
-              <article class="job">
-                <h3>Production Capacity Growth</h3>
-                <div class="meta">Strategic Optimization</div>
-                <ul>
-                  <li>Increased factory production capacity by 16% through Lean Manufacturing and workflow optimization.</li>
-                  <li>Generated approximately US$500K in annual operating savings through bottleneck elimination.</li>
-                  <li>Optimized resource allocation across 42 production lines without proportional cost increase.</li>
-                </ul>
-              </article>
-
-              <article class="job">
-                <h3>Manufacturing Quality & Reliability</h3>
-                <div class="meta">Defect Reduction & Downtime</div>
-                <ul>
-                  <li>Reduced machine downtime by 35% through preventive and predictive maintenance strategies.</li>
-                  <li>Improved overall manufacturing defect rate by 22% through structured process control.</li>
-                  <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM via root-cause analysis and team engagement.</li>
-                </ul>
-              </article>
+          <div class="impact-grid">
+            <div class="impact-box">
+              <div class="impact-label">Capacity & Savings</div>
+              <h3>Production growth with real financial value</h3>
+              <ul>
+                <li>Increased production capacity by 16% through Lean Manufacturing and workflow optimization.</li>
+                <li>Generated approximately US$500K in annual operating savings by eliminating bottlenecks and improving utilization.</li>
+                <li>Improved resource allocation across 42 production lines without material loss of output.</li>
+              </ul>
             </div>
 
-            <div class="experience-list">
-              <article class="job">
-                <h3>Automation & Industrial Robots</h3>
-                <div class="meta">Technology Deployment</div>
-                <ul>
-                  <li>Led deployment of 62 KUKA robots across eight production lines, improving productivity and process consistency.</li>
-                  <li>Introduced AGVs for internal material transport, reducing logistics workforce requirements by 25%.</li>
-                  <li>Established preventive and predictive maintenance strategies for emerging technologies.</li>
-                </ul>
-              </article>
+            <div class="impact-box">
+              <div class="impact-label">Quality & Reliability</div>
+              <h3>Reliability improvements that reduced losses</h3>
+              <ul>
+                <li>Reduced machine downtime by 35% through targeted maintenance and reliability practices.</li>
+                <li>Improved manufacturing defect rate by 22% through structured process control and RCA.</li>
+                <li>Reduced Tablet defects from ~24,000 PPM to ~6,000 PPM through defect mapping and team engagement.</li>
+              </ul>
+            </div>
 
-              <article class="job">
-                <h3>Recognition & Awards</h3>
-                <div class="meta">Industry Recognition</div>
-                <ul>
-                  <li>Received Samsung Global Innovation Day Award in 2022 for manufacturing innovation and engineering excellence.</li>
-                  <li>Led manufacturing setup and commissioning of VD facility from startup to mass production readiness.</li>
-                  <li>Commissioned 14 production lines and achieved target production capacity of 12,000 units per day on schedule.</li>
-                </ul>
-              </article>
+            <div class="impact-box">
+              <div class="impact-label">Automation</div>
+              <h3>Factory automation with sustainable productivity gains</h3>
+              <ul>
+                <li>Led deployment of 62 KUKA robots across eight production lines to improve productivity and consistency.</li>
+                <li>Introduced AGVs for material transport, reducing logistics workforce requirements by 25%.</li>
+                <li>Established preventive and predictive maintenance strategies for newly introduced technologies.</li>
+              </ul>
+            </div>
+
+            <div class="impact-box">
+              <div class="impact-label">Recognition</div>
+              <h3>Award-winning performance and execution</h3>
+              <ul>
+                <li>Received the Samsung Global Innovation Day Award in 2022 for engineering excellence and manufacturing innovation.</li>
+                <li>Commissioned 14 production lines and met target capacity of 12,000 units/day on schedule.</li>
+                <li>Led the VD facility from empty building to mass-production readiness through structured ramp-up execution.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -933,85 +695,107 @@
       <section id="experience" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Professional Experience</div>
-            <h2>Career Progression in Manufacturing Leadership</h2>
+            <div class="eyebrow">Professional Experience</div>
+            <h2>Career progression built on execution and leadership.</h2>
           </div>
 
-          <div class="experience-grid">
-            <div class="experience-list">
-              <article class="job">
-                <div class="job-header">
-                  <div>
-                    <h3>Maintenance & Innovation Senior Manager</h3>
-                    <div class="meta">Samsung Electronics Egypt</div>
-                  </div>
-                  <span>Jan 2025 - Present</span>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <div>
+                  <h3>Maintenance and Innovation Senior Manager</h3>
+                  <div class="timeline-company">Samsung Electronics Egypt</div>
                 </div>
-                <div class="job-location">Beni Suef, Egypt</div>
-                <ul>
-                  <li>Lead maintenance and reliability operations across 42 production lines covering TV Assembly, LCM, Press, Injection, EPS, Bonding, and Powder Coating, directing 54 engineers and technicians.</li>
-                  <li>Manage approximately US$1.5M in annual CAPEX and spare-parts expenditure and coordinate equipment upgrades with Production, Quality, Engineering, Supply Chain, and suppliers.</li>
-                  <li>Led installation, commissioning, maintenance setup, and production stabilization for new Bonding and Powder Coating technologies through quality audit and mass-production release.</li>
-                  <li>Established preventive and predictive maintenance strategies for equipment platforms with no previous maintenance history, improving MTBF by 21%.</li>
-                  <li>Reduced spare-parts cost by 15% through planning, localization, inventory control, and demand forecasting.</li>
-                </ul>
-              </article>
+                <span class="date-pill">Jan 2025 – Present</span>
+              </div>
+              <div class="timeline-location">Beni Suef, Egypt</div>
+              <ul>
+                <li>Lead maintenance and reliability operations across 42 production lines covering TV Assembly, LCM, Press, Injection, EPS, Bonding, and Powder Coating, directing 54 engineers and technicians.</li>
+                <li>Manage approximately US$1.5M in annual CAPEX and spare-parts expenditure and coordinate equipment upgrades with Production, Quality, Engineering, Supply Chain, and suppliers.</li>
+                <li>Led installation, commissioning, maintenance setup, and production stabilization for new Bonding and Powder Coating technologies through quality audit and mass-production release.</li>
+                <li>Established preventive and predictive maintenance strategies for equipment platforms with no previous maintenance history, improving MTBF by 21%.</li>
+                <li>Reduced spare-parts cost by 15% through planning, localization, inventory control, and demand forecasting.</li>
+              </ul>
+            </article>
 
-              <article class="job">
-                <div class="job-header">
-                  <div>
-                    <h3>Mobile Manufacturing Senior Manager</h3>
-                    <div class="meta">Samsung Electronics Egypt</div>
-                  </div>
-                  <span>Aug 2023 - Jan 2025</span>
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <div>
+                  <h3>Mobile Manufacturing Senior Manager</h3>
+                  <div class="timeline-company">Samsung Electronics Egypt</div>
                 </div>
-                <div class="job-location">Beni Suef, Egypt</div>
-                <ul>
-                  <li>Led integrated Mobile and Tablet manufacturing operations across Production, Maintenance, Quality Engineering, Product Engineering, and In-house Logistics, directing approximately 320 employees.</li>
-                  <li>Increased production capacity by 16% through Lean Manufacturing and resource optimization, contributing approximately US$500K in annual operating savings.</li>
-                  <li>Reduced machine downtime by 35% through reliability improvement and improved manufacturing defects by 22% through process control and structured problem-solving.</li>
-                  <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM through incoming-quality controls, defect mapping, root-cause analysis, and team engagement.</li>
-                  <li>Managed productivity, quality, loss, scrap, delivery, and equipment KPIs and supported CEO-level manufacturing transformation initiatives.</li>
-                </ul>
-              </article>
-            </div>
+                <span class="date-pill">Aug 2023 – Jan 2025</span>
+              </div>
+              <div class="timeline-location">Beni Suef, Egypt</div>
+              <ul>
+                <li>Led integrated Mobile and Tablet manufacturing operations across Production, Maintenance, Quality Engineering, Product Engineering, and In-house Logistics, directing approximately 320 employees.</li>
+                <li>Increased production capacity by 16% through Lean Manufacturing and resource optimization, contributing approximately US$500K in annual operating savings.</li>
+                <li>Reduced machine downtime by 35% through reliability improvement and improved manufacturing defects by 22% through process control and structured problem-solving.</li>
+                <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM through incoming-quality controls, defect mapping, root-cause analysis, and team engagement.</li>
+                <li>Managed productivity, quality, loss, scrap, delivery, and equipment KPIs while supporting CEO-level manufacturing transformation initiatives.</li>
+              </ul>
+            </article>
 
-            <div class="experience-list">
-              <article class="job">
-                <div class="job-header">
-                  <div>
-                    <h3>Production Technology Senior Manager</h3>
-                    <div class="meta">Samsung Electronics Egypt</div>
-                  </div>
-                  <span>Dec 2012 - Jul 2023</span>
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <div>
+                  <h3>Production Technology Senior Manager</h3>
+                  <div class="timeline-company">Samsung Electronics Egypt</div>
                 </div>
-                <div class="job-location">Beni Suef, Egypt</div>
-                <ul>
-                  <li>Directed Production Technology and Manufacturing Engineering across TV Final Assembly, LCM, Press, and CKD/SKD/MKD operations, leading 53 engineers and technicians.</li>
-                  <li>Led manufacturing setup, equipment installation, commissioning, and ramp-up of the VD facility from an empty building to mass-production readiness.</li>
-                  <li>Commissioned 14 production lines and achieved the target production capacity of 12,000 units per day on schedule.</li>
-                  <li>Planned and executed deployment of 62 KUKA industrial robots across eight production lines, improving productivity and process consistency.</li>
-                  <li>Introduced AGVs for internal material transport, reducing logistics workforce requirements by 25%.</li>
-                  <li>Established Mobile and Tablet manufacturing lines on an accelerated schedule and delivered production readiness by the planned launch date.</li>
-                </ul>
-              </article>
+                <span class="date-pill">Dec 2012 – Jul 2023</span>
+              </div>
+              <div class="timeline-location">Beni Suef, Egypt</div>
+              <ul>
+                <li>Directed Production Technology and Manufacturing Engineering across TV Final Assembly, LCM, Press, and CKD/SKD/MKD operations, leading 53 engineers and technicians.</li>
+                <li>Led manufacturing setup, equipment installation, commissioning, and ramp-up of the VD facility from empty building to mass-production readiness.</li>
+                <li>Commissioned 14 production lines and achieved target production capacity of 12,000 units/day on schedule.</li>
+                <li>Planned and executed deployment of 62 KUKA industrial robots across eight production lines, improving productivity and process consistency.</li>
+                <li>Introduced AGVs for internal material transport, reducing logistics workforce requirements by 25%.</li>
+              </ul>
+            </article>
 
-              <article class="job">
-                <div class="job-header">
-                  <div>
-                    <h3>Earlier Career Roles</h3>
-                    <div class="meta">Foundation & Growth</div>
-                  </div>
-                  <span>2007 - 2012</span>
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <div>
+                  <h3>Preventive Maintenance Section Head</h3>
+                  <div class="timeline-company">ASEC Automation – South Valley Cement Factory</div>
                 </div>
-                <div class="job-location">Egypt</div>
-                <ul>
-                  <li><strong>Preventive Maintenance Section Head</strong> at ASEC Automation - South Valley Cement Factory (Jul 2011 - Dec 2012): Led preventive and predictive maintenance planning, major shutdowns, and equipment overhauls.</li>
-                  <li><strong>Maintenance Engineer</strong> at Dehydro Foods S.A.E. (Jul 2008 - Jul 2011): Improved productivity and designed microcontroller-based control systems; supported ISO, HACCP, and BRC compliance.</li>
-                  <li><strong>Installation Engineer</strong> at Hanz Lifts Company (Oct 2007 - Jul 2008): Installed and commissioned elevator control systems using Siemens S7-200 PLCs and inverters.</li>
-                </ul>
-              </article>
-            </div>
+                <span class="date-pill">Jul 2011 – Dec 2012</span>
+              </div>
+              <div class="timeline-location">Beni Suef, Egypt</div>
+              <ul>
+                <li>Led preventive and predictive maintenance planning, major shutdowns, scheduled maintenance, and equipment overhauls to improve plant availability and maintenance cost performance.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <div>
+                  <h3>Maintenance Engineer</h3>
+                  <div class="timeline-company">Dehydro Foods S.A.E.</div>
+                </div>
+                <span class="date-pill">Jul 2008 – Jul 2011</span>
+              </div>
+              <div class="timeline-location">Beni Suef, Egypt</div>
+              <ul>
+                <li>Improved productivity on two lines by converting the final dehydration stage from steam heating to a burner-based indirect heating system.</li>
+                <li>Designed a microcontroller-based control system for the industrial water-treatment unit and supported ISO, HACCP, and BRC compliance.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <div>
+                  <h3>Installation Engineer</h3>
+                  <div class="timeline-company">Hanz Lifts Company</div>
+                </div>
+                <span class="date-pill">Oct 2007 – Jul 2008</span>
+              </div>
+              <div class="timeline-location">Giza, Egypt</div>
+              <ul>
+                <li>Installed and commissioned elevator control systems using Siemens S7-200 PLCs, inverters, and associated electrical-control components.</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
@@ -1019,64 +803,67 @@
       <section id="skills" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Technical Knowledge</div>
-            <h2>Expertise Across Manufacturing & Technology</h2>
+            <div class="eyebrow">Technical Knowledge</div>
+            <h2>Expertise across automation, maintenance, and operations.</h2>
           </div>
 
-          <div class="about-grid">
-            <div class="about-panel">
+          <div class="skill-grid">
+            <div class="skill-card">
               <h3>Automation & Controls</h3>
-              <div class="skill-list">
-                <span>KUKA Industrial Robots</span>
-                <span>AGVs</span>
-                <span>Siemens S7 PLC</span>
-                <span>Samsung NX PLC</span>
-                <span>Mitsubishi Q PLC</span>
-                <span>SCADA Systems</span>
-                <span>Inverters</span>
-                <span>Microcontroller Systems</span>
+              <div class="chip-list">
+                <span class="chip">KUKA Robots</span>
+                <span class="chip">AGVs</span>
+                <span class="chip">Siemens S7 PLC</span>
+                <span class="chip">Samsung NX PLC</span>
+                <span class="chip">Mitsubishi Q PLC</span>
+                <span class="chip">SCADA</span>
+                <span class="chip">Inverters</span>
+                <span class="chip">Microcontroller Systems</span>
               </div>
             </div>
 
-            <div class="about-panel">
+            <div class="skill-card">
               <h3>Maintenance & Reliability</h3>
-              <div class="skill-list">
-                <span>TPM (Total Productive Maintenance)</span>
-                <span>OEE (Overall Equipment Effectiveness)</span>
-                <span>Preventive Maintenance</span>
-                <span>Predictive Maintenance</span>
-                <span>MTBF / MTTR</span>
-                <span>Root Cause Analysis</span>
-                <span>Shutdown Planning</span>
-                <span>Spare-parts Management</span>
+              <div class="chip-list">
+                <span class="chip">TPM</span>
+                <span class="chip">OEE</span>
+                <span class="chip">Preventive Maintenance</span>
+                <span class="chip">Predictive Maintenance</span>
+                <span class="chip">MTBF</span>
+                <span class="chip">MTTR</span>
+                <span class="chip">Root Cause Analysis</span>
+                <span class="chip">Shutdown Planning</span>
+                <span class="chip">Spare-part Management</span>
               </div>
             </div>
 
-            <div class="about-panel">
+            <div class="skill-card">
               <h3>Manufacturing & Operations</h3>
-              <div class="skill-list">
-                <span>Lean Manufacturing</span>
-                <span>Capacity Planning</span>
-                <span>Workflow Optimization</span>
-                <span>Process Improvement</span>
-                <span>Equipment Commissioning</span>
-                <span>Industrialization</span>
-                <span>Production Ramp-up</span>
-                <span>New Product Introduction</span>
+              <div class="chip-list">
+                <span class="chip">Lean Manufacturing</span>
+                <span class="chip">Capacity Planning</span>
+                <span class="chip">Workflow Optimization</span>
+                <span class="chip">Process Improvement</span>
+                <span class="chip">Equipment Commissioning</span>
+                <span class="chip">Manufacturing Ramp-up</span>
+                <span class="chip">Industrialization</span>
+                <span class="chip">New Product Introduction</span>
               </div>
             </div>
 
-            <div class="about-panel">
+            <div class="skill-card">
               <h3>Education & Certifications</h3>
-              <div class="skill-list">
-                <span>B.Eng. Electrical Engineering (Assiut University, 2007)</span>
-                <span>Lean Six Sigma Green Belt</span>
-                <span>Six Sigma Black Belt</span>
-                <span>TPM Foundations</span>
-                <span>Robot Programming & Maintenance</span>
-                <span>ISO 22000:2005 Auditor</span>
-                <span>ISO 14001:2004 Auditor</span>
-                <span>Arabic (Native) | English (Professional)</span>
+              <div class="chip-list">
+                <span class="chip">B.Eng. Electrical Engineering</span>
+                <span class="chip">Assiut University</span>
+                <span class="chip">Lean Six Sigma Green Belt</span>
+                <span class="chip">Six Sigma Black Belt</span>
+                <span class="chip">TPM Foundation</span>
+                <span class="chip">Robot Programming & Maintenance</span>
+                <span class="chip">ISO 22000 Auditor</span>
+                <span class="chip">ISO 14001 Auditor</span>
+                <span class="chip">Arabic – Native</span>
+                <span class="chip">English – Professional</span>
               </div>
             </div>
           </div>
@@ -1086,14 +873,14 @@
       <section id="contact" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Contact</div>
-            <h2>Let's discuss manufacturing excellence and operational transformation.</h2>
+            <div class="eyebrow">Contact</div>
+            <h2>Let’s discuss manufacturing excellence and performance transformation.</h2>
           </div>
 
-          <div class="contact-grid">
-            <div class="contact-card">
+          <div class="contact-wrap">
+            <div class="contact-list">
               <div class="contact-item">
-                <div class="icon">✉</div>
+                <div class="contact-icon">✉</div>
                 <div>
                   <h4>Email</h4>
                   <p><a href="mailto:eng.ama2003@gmail.com">eng.ama2003@gmail.com</a></p>
@@ -1101,7 +888,7 @@
               </div>
 
               <div class="contact-item">
-                <div class="icon">📍</div>
+                <div class="contact-icon">📍</div>
                 <div>
                   <h4>Location</h4>
                   <p>Beni Suef, Egypt</p>
@@ -1109,7 +896,7 @@
               </div>
 
               <div class="contact-item">
-                <div class="icon">📱</div>
+                <div class="contact-icon">📱</div>
                 <div>
                   <h4>Phone</h4>
                   <p><a href="tel:+201159888350">+20 115 988 8350</a></p>
@@ -1117,32 +904,30 @@
               </div>
 
               <div class="contact-item">
-                <div class="icon">💼</div>
+                <div class="contact-icon">💼</div>
                 <div>
                   <h4>LinkedIn</h4>
-                  <p><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">View My Profile</a></p>
+                  <p><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">linkedin.com/in/ahmed-darweesh-62942b116</a></p>
                 </div>
               </div>
             </div>
 
-            <div class="contact-card">
-              <form>
-                <div class="input-row">
-                  <input type="text" placeholder="Your Name" required />
-                  <input type="email" placeholder="Your Email" required />
-                </div>
-                <input type="text" placeholder="Subject" />
-                <textarea placeholder="Write your message here..."></textarea>
-                <button class="btn btn-primary" type="submit">Send Message</button>
-              </form>
-            </div>
+            <form>
+              <div class="input-row">
+                <input type="text" placeholder="Your Name" aria-label="Your Name" />
+                <input type="email" placeholder="Your Email" aria-label="Your Email" />
+              </div>
+              <input type="text" placeholder="Subject" aria-label="Subject" />
+              <textarea placeholder="Write your message here..." aria-label="Message"></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container">© 2026 Ahmed Darweesh — Manufacturing Excellence & Operational Leadership</div>
+      © 2026 Ahmed Darweesh — Manufacturing Excellence & Operational Leadership
     </footer>
   </body>
 </html>
