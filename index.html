@@ -526,6 +526,8 @@
         .metrics { display: grid; grid-template-columns: 1fr; }
         .timeline-head { flex-direction: column; }
       }
+      a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
+      [id] { scroll-margin-top: 140px; }
     </style>
   </head>
   <body>
@@ -558,6 +560,7 @@
             <div class="hero-actions">
               <a href="#impact" class="btn btn-primary">View Impact</a>
               <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+              <a href="assets/Ahmed_Darweesh_CV.docx" class="btn btn-secondary" download="Ahmed_Darweesh_CV.docx">Download CV (Word)</a>
             </div>
 
             <div class="metrics">
@@ -600,7 +603,7 @@
                 </div>
                 <div class="meta-item">
                   <span>LinkedIn</span>
-                  <strong><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">View profile</a></strong>
+                  <strong><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank" rel="noopener noreferrer">View profile</a></strong>
                 </div>
               </div>
             </div>
@@ -672,8 +675,8 @@
               <h3>Reliability improvements that reduced losses</h3>
               <ul>
                 <li>Reduced machine downtime by 35% through targeted maintenance and reliability practices.</li>
-                <li>Improved manufacturing defect rate by 22% through structured process control and RCA.</li>
-                <li>Reduced Tablet defects from ~24,000 PPM to ~6,000 PPM through defect mapping and team engagement.</li>
+                <li>Improved the overall manufacturing defect rate by 22% through structured process control and RCA.</li>
+                <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM, a 75% reduction in Tablet defect PPM, through defect mapping and team engagement.</li>
               </ul>
             </div>
 
@@ -738,8 +741,8 @@
               <ul>
                 <li>Led integrated Mobile and Tablet manufacturing operations across Production, Maintenance, Quality Engineering, Product Engineering, and In-house Logistics, directing approximately 320 employees.</li>
                 <li>Increased production capacity by 16% through Lean Manufacturing and resource optimization, contributing approximately US$500K in annual operating savings.</li>
-                <li>Reduced machine downtime by 35% through reliability improvement and improved manufacturing defects by 22% through process control and structured problem-solving.</li>
-                <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM through incoming-quality controls, defect mapping, root-cause analysis, and team engagement.</li>
+                <li>Reduced machine downtime by 35% through reliability improvement and improved the overall manufacturing defect rate by 22% through process control and structured problem-solving.</li>
+                <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM (75% reduction in Tablet defect PPM) through incoming-quality controls, defect mapping, root-cause analysis, and team engagement.</li>
                 <li>Managed productivity, quality, loss, scrap, delivery, and equipment KPIs while supporting CEO-level manufacturing transformation initiatives.</li>
               </ul>
             </article>
@@ -865,11 +868,11 @@
                 <span class="chip">B.Eng. Electrical Engineering</span>
                 <span class="chip">Assiut University</span>
                 <span class="chip">Lean Six Sigma Green Belt</span>
-                <span class="chip">Six Sigma Black Belt</span>
-                <span class="chip">TPM Foundation</span>
+                <span class="chip">Six Sigma Black Belt Course Completion</span>
+                <span class="chip">Operations Foundations: TPM</span>
                 <span class="chip">Robot Programming & Maintenance</span>
-                <span class="chip">ISO 22000 Auditor</span>
-                <span class="chip">ISO 14001 Auditor</span>
+                <span class="chip">ISO 22000:2005 Internal Auditor</span>
+                <span class="chip">ISO 14001:2004 Internal Auditor</span>
                 <span class="chip">Arabic – Native</span>
                 <span class="chip">English – Professional</span>
               </div>
@@ -915,20 +918,22 @@
                 <div class="contact-icon">💼</div>
                 <div>
                   <h4>LinkedIn</h4>
-                  <p><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">linkedin.com/in/ahmed-darweesh-62942b116</a></p>
+                  <p><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank" rel="noopener noreferrer">linkedin.com/in/ahmed-darweesh-62942b116</a></p>
                 </div>
               </div>
             </div>
 
-            <form>
-              <div class="input-row">
-                <input type="text" placeholder="Your Name" aria-label="Your Name" />
-                <input type="email" placeholder="Your Email" aria-label="Your Email" />
+            <div class="panel">
+              <div class="eyebrow">Start a Conversation</div>
+              <h3>Discuss a role or a manufacturing challenge.</h3>
+              <p style="margin:18px 0 24px;">Email me with the role, company, or factory challenge you have in mind. You can also connect with me on LinkedIn.</p>
+              <div class="hero-actions">
+                <a href="mailto:eng.ama2003@gmail.com?subject=Manufacturing%20opportunity%20or%20project%20enquiry" class="btn btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/ahmed-darweesh-62942b116" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+                <a href="assets/Ahmed_Darweesh_CV.docx" class="btn btn-secondary" download="Ahmed_Darweesh_CV.docx">Download CV (Word)</a>
               </div>
-              <input type="text" placeholder="Subject" aria-label="Subject" />
-              <textarea placeholder="Write your message here..." aria-label="Message"></textarea>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+              <p>Your email app opens when you select Email Me. If it does not open, copy <a href="mailto:eng.ama2003@gmail.com">eng.ama2003@gmail.com</a> into your email service.</p>
+            </div>
           </div>
         </div>
       </section>
