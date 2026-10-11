@@ -212,9 +212,15 @@
         min-height: 320px;
         display: grid;
         place-items: center;
-        font-size: 7rem;
         background: linear-gradient(135deg, rgba(139, 92, 246, 0.14), rgba(34, 211, 238, 0.08));
         border-bottom: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .profile-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .profile-info {
         padding: 24px 24px 28px;
@@ -571,7 +577,9 @@
           </div>
 
           <aside class="profile-card">
-            <div class="profile-art">🏭</div>
+            <div class="profile-art">
+              <img src="assets/profile-photo.jpg" alt="Ahmed Darweesh" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'font-size:7rem; width:100%; height:100%; display:grid; place-items:center;\'>🏭</div>'" />
+            </div>
             <div class="profile-info">
               <h3>Ahmed Darweesh</h3>
               <div class="title-tag">Manufacturing & Maintenance Senior Manager</div>
