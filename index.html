@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Portfolio</title>
+    <title>Ahmed Darweesh | Manufacturing & Maintenance Senior Manager</title>
     <meta
       name="description"
-      content="Portfolio website for a software developer and creative professional."
+      content="Manufacturing and Maintenance Senior Manager with 18+ years of experience in high-volume manufacturing operations, Lean Manufacturing, and reliability engineering."
     />
     <style>
       :root {
@@ -230,7 +230,11 @@
         font-weight: 900;
       }
 
-      .highlight {
+      .hero-title-main {
+        color: var(--text-primary);
+      }
+
+      .hero-title-accent {
         background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
         -webkit-background-clip: text;
         background-clip: text;
@@ -325,7 +329,7 @@
 
       .profile-meta {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 14px;
       }
 
@@ -345,8 +349,18 @@
       }
 
       .profile-meta strong {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         color: var(--text-primary);
+        word-break: break-word;
+      }
+
+      .profile-meta a {
+        color: var(--accent-purple);
+        transition: 0.3s ease;
+      }
+
+      .profile-meta a:hover {
+        color: var(--accent-pink);
       }
 
       .about-grid,
@@ -444,6 +458,12 @@
         color: transparent;
         font-size: 0.9rem;
         font-weight: 700;
+      }
+
+      .job-location {
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        margin-bottom: 8px;
       }
 
       .job-header span {
@@ -670,6 +690,12 @@
         font-size: 0.9rem;
       }
 
+      .summary-text {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        margin-bottom: 16px;
+      }
+
       @media (max-width: 900px) {
         .hero-grid,
         .about-grid,
@@ -733,13 +759,13 @@
   <body>
     <header class="topbar">
       <div class="container nav">
-        <a class="brand" href="#home">Your <span>Name</span></a>
+        <a class="brand" href="#home">Ahmed <span>Darweesh</span></a>
 
         <nav class="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#impact">Impact</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -749,61 +775,58 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <div class="kicker">Software Developer</div>
+            <div class="kicker">Manufacturing Leader</div>
             <h1>
-              I build <span class="highlight">digital experiences</span> that
-              feel human.
+              <span class="hero-title-main">Leading</span> <span class="hero-title-accent">operational excellence</span> <span class="hero-title-main">in high-volume manufacturing.</span>
             </h1>
             <p>
-              I'm a developer focused on creating clean, useful, and engaging
-              digital products. I enjoy turning ideas into intuitive interfaces
-              and practical solutions that help people and businesses grow.
+              18+ years driving manufacturing transformation through Lean methodology, reliability engineering, and strategic team leadership. Delivered capacity growth, cost reduction, and quality improvements across complex multi-line operations at Samsung Electronics Egypt.
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-secondary" href="#contact">Hire Me</a>
+              <a class="btn btn-primary" href="#impact">View Impact</a>
+              <a class="btn btn-secondary" href="#contact">Get in Touch</a>
             </div>
 
             <div class="mini-stats">
               <div>
-                <strong>3+</strong>
-                <span>Years of work</span>
+                <strong>18+</strong>
+                <span>Years Experience</span>
               </div>
               <div>
-                <strong>12</strong>
-                <span>Projects shipped</span>
+                <strong>320+</strong>
+                <span>Employees Led</span>
               </div>
               <div>
-                <strong>100%</strong>
-                <span>Passion</span>
+                <strong>$500K+</strong>
+                <span>Annual Savings</span>
               </div>
             </div>
           </div>
 
           <div class="profile-card">
-            <div class="profile-image">👩‍💻</div>
+            <div class="profile-image">🏭</div>
             <div class="profile-info">
-              <h3>Your Name</h3>
-              <div class="role">Frontend Developer • UI/UX Enthusiast</div>
-              <p>Based in Lebanon • Open to remote opportunities</p>
+              <h3>Ahmed Darweesh</h3>
+              <div class="role">Manufacturing & Maintenance Senior Manager</div>
+              <p>Samsung Electronics Egypt</p>
 
               <div class="profile-meta">
                 <div>
+                  <span>Location</span>
+                  <strong>Beni Suef, Egypt</strong>
+                </div>
+                <div>
                   <span>Email</span>
-                  <strong>yourmail@example.com</strong>
+                  <strong><a href="mailto:eng.ama2003@gmail.com">eng.ama2003@gmail.com</a></strong>
                 </div>
                 <div>
                   <span>Phone</span>
-                  <strong>+961 00 000 000</strong>
+                  <strong>+20 115 988 8350</strong>
                 </div>
                 <div>
-                  <span>Specialty</span>
-                  <strong>Web Design</strong>
-                </div>
-                <div>
-                  <span>Focus</span>
-                  <strong>Product & UI</strong>
+                  <span>LinkedIn</span>
+                  <strong><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">View Profile</a></strong>
                 </div>
               </div>
             </div>
@@ -814,41 +837,94 @@
       <section id="about" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">About Me</div>
-            <h2>Creative, driven, and eager to build meaningful products.</h2>
+            <div class="kicker">Professional Summary</div>
+            <h2>Transforming Manufacturing Operations at Scale</h2>
           </div>
 
           <div class="about-grid">
             <div class="about-panel">
-              <p>
-                I'm a multidisciplinary developer with a strong interest in
-                front-end development, user experience, and creating polished web
-                experiences. I enjoy solving problems through design and code,
-                while keeping the end-user's experience at the center of every
-                decision.
+              <p class="summary-text">
+                Manufacturing and maintenance senior leader with 18+ years of experience in high-volume manufacturing, including 13+ years at Samsung Electronics Egypt. Leadership experience spans manufacturing operations, maintenance, production technology, quality engineering, product engineering, and in-house logistics across 42 production lines.
               </p>
-              <p>
-                My work combines visual thinking, technical implementation, and
-                a strong sense of usability. I like collaborating with teams,
-                learning new tools, and turning ideas into functional,
-                meaningful digital experiences.
+              <p class="summary-text">
+                Managed organizations of up to 320 employees, engineering teams of 53, a current maintenance organization of 54, and annual CAPEX and spare-parts expenditure of approximately US$1.5M. Delivered 16% capacity growth, 35% lower machine downtime, 22% lower manufacturing defects, and approximately US$500K in annual operating savings through Lean Manufacturing, reliability improvement, automation, and cross-functional execution.
               </p>
             </div>
 
             <div class="about-panel">
-              <h3>Core Skills</h3>
+              <h3>Core Competencies</h3>
               <div class="skill-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>UI/UX</span>
-                <span>Figma</span>
-                <span>Responsive Design</span>
-                <span>Git</span>
-                <span>Problem Solving</span>
-                <span>Teamwork</span>
+                <span>Manufacturing Operations</span>
+                <span>Maintenance Management</span>
+                <span>Lean Manufacturing</span>
+                <span>TPM & OEE</span>
+                <span>Reliability Engineering</span>
+                <span>Preventive Maintenance</span>
+                <span>Root Cause Analysis</span>
+                <span>Capacity Planning</span>
+                <span>Factory Automation</span>
+                <span>CAPEX Management</span>
+                <span>Quality Improvement</span>
+                <span>Cost Reduction</span>
+                <span>Team Leadership</span>
+                <span>Process Improvement</span>
+                <span>Equipment Commissioning</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">Selected Career Impact</div>
+            <h2>Measurable Results Across Operations</h2>
+          </div>
+
+          <div class="experience-grid">
+            <div class="experience-list">
+              <article class="job">
+                <h3>Production Capacity Growth</h3>
+                <div class="meta">Strategic Optimization</div>
+                <ul>
+                  <li>Increased factory production capacity by 16% through Lean Manufacturing and workflow optimization.</li>
+                  <li>Generated approximately US$500K in annual operating savings through bottleneck elimination.</li>
+                  <li>Optimized resource allocation across 42 production lines without proportional cost increase.</li>
+                </ul>
+              </article>
+
+              <article class="job">
+                <h3>Manufacturing Quality & Reliability</h3>
+                <div class="meta">Defect Reduction & Downtime</div>
+                <ul>
+                  <li>Reduced machine downtime by 35% through preventive and predictive maintenance strategies.</li>
+                  <li>Improved overall manufacturing defect rate by 22% through structured process control.</li>
+                  <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM via root-cause analysis and team engagement.</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="experience-list">
+              <article class="job">
+                <h3>Automation & Industrial Robots</h3>
+                <div class="meta">Technology Deployment</div>
+                <ul>
+                  <li>Led deployment of 62 KUKA robots across eight production lines, improving productivity and process consistency.</li>
+                  <li>Introduced AGVs for internal material transport, reducing logistics workforce requirements by 25%.</li>
+                  <li>Established preventive and predictive maintenance strategies for emerging technologies.</li>
+                </ul>
+              </article>
+
+              <article class="job">
+                <h3>Recognition & Awards</h3>
+                <div class="meta">Industry Recognition</div>
+                <ul>
+                  <li>Received Samsung Global Innovation Day Award in 2022 for manufacturing innovation and engineering excellence.</li>
+                  <li>Led manufacturing setup and commissioning of VD facility from startup to mass production readiness.</li>
+                  <li>Commissioned 14 production lines and achieved target production capacity of 12,000 units per day on schedule.</li>
+                </ul>
+              </article>
             </div>
           </div>
         </div>
@@ -857,8 +933,8 @@
       <section id="experience" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Experience</div>
-            <h2>Where I've been building and growing.</h2>
+            <div class="kicker">Professional Experience</div>
+            <h2>Career Progression in Manufacturing Leadership</h2>
           </div>
 
           <div class="experience-grid">
@@ -866,30 +942,36 @@
               <article class="job">
                 <div class="job-header">
                   <div>
-                    <h3>Frontend Developer</h3>
-                    <div class="meta">Freelance / Remote</div>
+                    <h3>Maintenance & Innovation Senior Manager</h3>
+                    <div class="meta">Samsung Electronics Egypt</div>
                   </div>
-                  <span class="meta">2023 – Present</span>
+                  <span>Jan 2025 - Present</span>
                 </div>
+                <div class="job-location">Beni Suef, Egypt</div>
                 <ul>
-                  <li>Developed responsive and modern interfaces for small businesses and personal brands.</li>
-                  <li>Translated design concepts into clean, maintainable front-end code.</li>
-                  <li>Improved user experience through thoughtful layout, content structure, and interactions.</li>
+                  <li>Lead maintenance and reliability operations across 42 production lines covering TV Assembly, LCM, Press, Injection, EPS, Bonding, and Powder Coating, directing 54 engineers and technicians.</li>
+                  <li>Manage approximately US$1.5M in annual CAPEX and spare-parts expenditure and coordinate equipment upgrades with Production, Quality, Engineering, Supply Chain, and suppliers.</li>
+                  <li>Led installation, commissioning, maintenance setup, and production stabilization for new Bonding and Powder Coating technologies through quality audit and mass-production release.</li>
+                  <li>Established preventive and predictive maintenance strategies for equipment platforms with no previous maintenance history, improving MTBF by 21%.</li>
+                  <li>Reduced spare-parts cost by 15% through planning, localization, inventory control, and demand forecasting.</li>
                 </ul>
               </article>
 
               <article class="job">
                 <div class="job-header">
                   <div>
-                    <h3>Web Designer / Content Creator</h3>
-                    <div class="meta">Creative Studio</div>
+                    <h3>Mobile Manufacturing Senior Manager</h3>
+                    <div class="meta">Samsung Electronics Egypt</div>
                   </div>
-                  <span class="meta">2021 – 2023</span>
+                  <span>Aug 2023 - Jan 2025</span>
                 </div>
+                <div class="job-location">Beni Suef, Egypt</div>
                 <ul>
-                  <li>Designed landing pages, promotional materials, and digital content strategies.</li>
-                  <li>Collaborated with clients to shape brand visuals and messaging.</li>
-                  <li>Balanced storytelling and usability to create engaging experiences.</li>
+                  <li>Led integrated Mobile and Tablet manufacturing operations across Production, Maintenance, Quality Engineering, Product Engineering, and In-house Logistics, directing approximately 320 employees.</li>
+                  <li>Increased production capacity by 16% through Lean Manufacturing and resource optimization, contributing approximately US$500K in annual operating savings.</li>
+                  <li>Reduced machine downtime by 35% through reliability improvement and improved manufacturing defects by 22% through process control and structured problem-solving.</li>
+                  <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM through incoming-quality controls, defect mapping, root-cause analysis, and team engagement.</li>
+                  <li>Managed productivity, quality, loss, scrap, delivery, and equipment KPIs and supported CEO-level manufacturing transformation initiatives.</li>
                 </ul>
               </article>
             </div>
@@ -898,30 +980,35 @@
               <article class="job">
                 <div class="job-header">
                   <div>
-                    <h3>Student / Learner</h3>
-                    <div class="meta">Business Administration</div>
+                    <h3>Production Technology Senior Manager</h3>
+                    <div class="meta">Samsung Electronics Egypt</div>
                   </div>
-                  <span class="meta">2018 – 2022</span>
+                  <span>Dec 2012 - Jul 2023</span>
                 </div>
+                <div class="job-location">Beni Suef, Egypt</div>
                 <ul>
-                  <li>Built strong communication, organization, and project coordination skills.</li>
-                  <li>Explored digital trends, technology, and entrepreneurship.</li>
-                  <li>Developed a strategic mindset for blending business needs with technology.</li>
+                  <li>Directed Production Technology and Manufacturing Engineering across TV Final Assembly, LCM, Press, and CKD/SKD/MKD operations, leading 53 engineers and technicians.</li>
+                  <li>Led manufacturing setup, equipment installation, commissioning, and ramp-up of the VD facility from an empty building to mass-production readiness.</li>
+                  <li>Commissioned 14 production lines and achieved the target production capacity of 12,000 units per day on schedule.</li>
+                  <li>Planned and executed deployment of 62 KUKA industrial robots across eight production lines, improving productivity and process consistency.</li>
+                  <li>Introduced AGVs for internal material transport, reducing logistics workforce requirements by 25%.</li>
+                  <li>Established Mobile and Tablet manufacturing lines on an accelerated schedule and delivered production readiness by the planned launch date.</li>
                 </ul>
               </article>
 
               <article class="job">
                 <div class="job-header">
                   <div>
-                    <h3>Personal Projects</h3>
-                    <div class="meta">Self-driven learning</div>
+                    <h3>Earlier Career Roles</h3>
+                    <div class="meta">Foundation & Growth</div>
                   </div>
-                  <span class="meta">2020 – Present</span>
+                  <span>2007 - 2012</span>
                 </div>
+                <div class="job-location">Egypt</div>
                 <ul>
-                  <li>Created portfolio sites, landing pages, and conceptual web experiences.</li>
-                  <li>Continuously practiced UI design, responsiveness, and front-end development.</li>
-                  <li>Focused on building work that is both visually attractive and technically sound.</li>
+                  <li><strong>Preventive Maintenance Section Head</strong> at ASEC Automation - South Valley Cement Factory (Jul 2011 - Dec 2012): Led preventive and predictive maintenance planning, major shutdowns, and equipment overhauls.</li>
+                  <li><strong>Maintenance Engineer</strong> at Dehydro Foods S.A.E. (Jul 2008 - Jul 2011): Improved productivity and designed microcontroller-based control systems; supported ISO, HACCP, and BRC compliance.</li>
+                  <li><strong>Installation Engineer</strong> at Hanz Lifts Company (Oct 2007 - Jul 2008): Installed and commissioned elevator control systems using Siemens S7-200 PLCs and inverters.</li>
                 </ul>
               </article>
             </div>
@@ -929,84 +1016,69 @@
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <section id="skills" class="section">
         <div class="container">
           <div class="section-header">
-            <div class="kicker">Projects</div>
-            <h2>Selected work that reflects my process.</h2>
+            <div class="kicker">Technical Knowledge</div>
+            <h2>Expertise Across Manufacturing & Technology</h2>
           </div>
 
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-thumb">01</div>
-              <h3>Portfolio Website</h3>
-              <div class="meta">Brand / Personal Portfolio</div>
-              <ul>
-                <li>Built a responsive portfolio with a modern visual identity.</li>
-                <li>Focused on strong typography, structure, and clear storytelling.</li>
-              </ul>
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+          <div class="about-grid">
+            <div class="about-panel">
+              <h3>Automation & Controls</h3>
+              <div class="skill-list">
+                <span>KUKA Industrial Robots</span>
+                <span>AGVs</span>
+                <span>Siemens S7 PLC</span>
+                <span>Samsung NX PLC</span>
+                <span>Mitsubishi Q PLC</span>
+                <span>SCADA Systems</span>
+                <span>Inverters</span>
+                <span>Microcontroller Systems</span>
               </div>
-            </article>
+            </div>
 
-            <article class="project-card">
-              <div class="project-thumb">02</div>
-              <h3>Business Landing Page</h3>
-              <div class="meta">Client Website</div>
-              <ul>
-                <li>Created a conversion-focused page for a business brand.</li>
-                <li>Improved communication flow and visual hierarchy for better engagement.</li>
-              </ul>
-              <div class="tags">
-                <span>Responsive</span>
-                <span>UI Design</span>
-                <span>Marketing</span>
+            <div class="about-panel">
+              <h3>Maintenance & Reliability</h3>
+              <div class="skill-list">
+                <span>TPM (Total Productive Maintenance)</span>
+                <span>OEE (Overall Equipment Effectiveness)</span>
+                <span>Preventive Maintenance</span>
+                <span>Predictive Maintenance</span>
+                <span>MTBF / MTTR</span>
+                <span>Root Cause Analysis</span>
+                <span>Shutdown Planning</span>
+                <span>Spare-parts Management</span>
               </div>
-            </article>
+            </div>
 
-            <article class="project-card">
-              <div class="project-thumb">03</div>
-              <h3>Creative Web Concept</h3>
-              <div class="meta">Interactive Campaign</div>
-              <ul>
-                <li>Explored motion, layout experimentation, and storytelling techniques.</li>
-                <li>Delivered a concept that balanced aesthetics and product clarity.</li>
-              </ul>
-              <div class="tags">
-                <span>Concept</span>
-                <span>Design</span>
-                <span>Web</span>
+            <div class="about-panel">
+              <h3>Manufacturing & Operations</h3>
+              <div class="skill-list">
+                <span>Lean Manufacturing</span>
+                <span>Capacity Planning</span>
+                <span>Workflow Optimization</span>
+                <span>Process Improvement</span>
+                <span>Equipment Commissioning</span>
+                <span>Industrialization</span>
+                <span>Production Ramp-up</span>
+                <span>New Product Introduction</span>
               </div>
-            </article>
-          </div>
-        </div>
-      </section>
+            </div>
 
-      <section id="testimonials" class="section">
-        <div class="container">
-          <div class="section-header">
-            <div class="kicker">Testimonials</div>
-            <h2>What people say about working with me.</h2>
-          </div>
-
-          <div class="testimonial-list">
-            <blockquote class="testimonial">
-              <p>"Very thoughtful, professional, and detail-oriented. The final work felt polished and user-friendly."</p>
-              <strong>— Client A</strong>
-            </blockquote>
-
-            <blockquote class="testimonial">
-              <p>"She brings creativity and structure together in a way that makes digital work feel both beautiful and effective."</p>
-              <strong>— Collaborator</strong>
-            </blockquote>
-
-            <blockquote class="testimonial">
-              <p>"Great communicator, quick learner, and genuinely passionate about building useful experiences."</p>
-              <strong>— Team Partner</strong>
-            </blockquote>
+            <div class="about-panel">
+              <h3>Education & Certifications</h3>
+              <div class="skill-list">
+                <span>B.Eng. Electrical Engineering (Assiut University, 2007)</span>
+                <span>Lean Six Sigma Green Belt</span>
+                <span>Six Sigma Black Belt</span>
+                <span>TPM Foundations</span>
+                <span>Robot Programming & Maintenance</span>
+                <span>ISO 22000:2005 Auditor</span>
+                <span>ISO 14001:2004 Auditor</span>
+                <span>Arabic (Native) | English (Professional)</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1015,7 +1087,7 @@
         <div class="container">
           <div class="section-header">
             <div class="kicker">Contact</div>
-            <h2>Let's build something meaningful together.</h2>
+            <h2>Let's discuss manufacturing excellence and operational transformation.</h2>
           </div>
 
           <div class="contact-grid">
@@ -1024,7 +1096,7 @@
                 <div class="icon">✉</div>
                 <div>
                   <h4>Email</h4>
-                  <p>yourmail@example.com</p>
+                  <p><a href="mailto:eng.ama2003@gmail.com">eng.ama2003@gmail.com</a></p>
                 </div>
               </div>
 
@@ -1032,15 +1104,23 @@
                 <div class="icon">📍</div>
                 <div>
                   <h4>Location</h4>
-                  <p>Lebanon</p>
+                  <p>Beni Suef, Egypt</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="icon">📱</div>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:+201159888350">+20 115 988 8350</a></p>
                 </div>
               </div>
 
               <div class="contact-item">
                 <div class="icon">💼</div>
                 <div>
-                  <h4>Available for</h4>
-                  <p>Freelance work, collaborations, and full-time opportunities</p>
+                  <h4>LinkedIn</h4>
+                  <p><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank">View My Profile</a></p>
                 </div>
               </div>
             </div>
@@ -1048,8 +1128,8 @@
             <div class="contact-card">
               <form>
                 <div class="input-row">
-                  <input type="text" placeholder="Your Name" />
-                  <input type="email" placeholder="Your Email" />
+                  <input type="text" placeholder="Your Name" required />
+                  <input type="email" placeholder="Your Email" required />
                 </div>
                 <input type="text" placeholder="Subject" />
                 <textarea placeholder="Write your message here..."></textarea>
@@ -1062,7 +1142,7 @@
     </main>
 
     <footer>
-      <div class="container">© 2026 Your Name — Built with passion.</div>
+      <div class="container">© 2026 Ahmed Darweesh — Manufacturing Excellence & Operational Leadership</div>
     </footer>
   </body>
 </html>
