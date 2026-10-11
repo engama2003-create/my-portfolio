@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#091321" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmed Darweesh | Manufacturing & Maintenance Senior Manager</title>
     <meta
@@ -528,9 +529,94 @@
       }
       a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
       [id] { scroll-margin-top: 140px; }
+
+      /* Navy and gold identity */
+      :root {
+        --bg: #091321; --bg-2: #101f32;
+        --text: #f5f7fa; --muted: #b9c5d4;
+        --line: rgba(215, 226, 240, .17);
+        --purple: #d4af64; --purple-2: #d4af64; --pink: #d4af64;
+        --cyan: #e4c582; --teal: #e4c582; --gold: #e4c582;
+        --shadow: 0 12px 32px rgba(0, 0, 0, .16);
+      }
+      html { color-scheme: dark; }
+      body { background: var(--bg); }
+      .topbar { background: rgba(9, 19, 33, .96); }
+      .brand span, .gradient-text, .metric strong {
+        background: none; color: var(--gold);
+        -webkit-text-fill-color: currentColor;
+      }
+      .nav-links a { padding: 8px 0; transition: color .2s ease; }
+      .nav-links a::after { background: var(--gold); }
+      .hero { padding: 64px 0; }
+      .hero-grid { grid-template-columns: 1.3fr .85fr; gap: 64px; }
+      .hero-copy h1 { font-size: clamp(2.4rem, 4.2vw, 3.8rem); line-height: 1.14; text-wrap: balance; }
+      .hero-copy p { max-width: 590px; font-size: 1.08rem; }
+      h2 { font-size: clamp(1.9rem, 3vw, 2.7rem); text-wrap: balance; }
+      .eyebrow { letter-spacing: .13em; font-size: .78rem; }
+      .btn { border-radius: 6px; padding: 13px 19px; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+      .btn-primary { background: var(--gold); color: #091321; box-shadow: none; }
+      .btn-primary:hover { background: #f1dba8; }
+      .btn-secondary { background: transparent; border-color: #6d7c91; }
+      .btn-secondary:hover { background: #18283d; border-color: var(--gold); }
+      .hero-actions { gap: 10px; margin-bottom: 32px; }
+      .metrics { gap: 28px; padding-top: 26px; border-top: 1px solid var(--line); }
+      .metric { min-width: 120px; }
+      .metric strong { font-size: clamp(2rem, 3.3vw, 2.8rem); font-variant-numeric: tabular-nums; }
+      .profile-card { background: #101f32; border-radius: 12px; box-shadow: none; }
+      .profile-art { min-height: 0; aspect-ratio: 1 / 1; background: #fff; }
+      .profile-art img { width: 100%; height: 100%; object-fit: cover; }
+      .profile-info { padding: 22px; }
+      .profile-info h3 { font-size: 1.6rem; }
+      .title-tag { font-size: .96rem; margin: 8px 0; }
+      .section { padding: 72px 0; border-top: 1px solid var(--line); }
+      .section-header { margin-bottom: 30px; }
+      .panel { background: transparent; border-radius: 8px; box-shadow: none; padding: 26px; }
+      .summary-text { line-height: 1.8; }
+      .chip { background: #14243a; border-color: #47556a; border-radius: 5px; line-height: 1.4; }
+      .chip:nth-child(3n) { border-color: #47556a; }
+      .impact-grid { gap: 20px; }
+      .impact-box { background: #101f32; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 8px; padding: 28px; }
+      .impact-box h3 { font-size: 1.25rem; line-height: 1.3; }
+      .impact-number { color: var(--gold); font-size: 2.8rem; font-weight: 800; line-height: 1.15; margin: 8px 0 16px; font-variant-numeric: tabular-nums; }
+      .timeline { gap: 0; border-left: 1px solid #53627a; margin-left: 5px; }
+      .timeline-item { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 28px 0 28px 28px; margin-left: 0; box-shadow: none; }
+      .timeline-item::before { left: -5px; top: 34px; background: var(--gold); box-shadow: none; }
+      .timeline-head h3 { line-height: 1.35; }
+      .date-pill { border-radius: 5px; background: #14243a; }
+      .skill-card { background: transparent; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 24px 0; }
+      .contact-item { background: #101f32; border-radius: 8px; }
+      .contact-icon { flex-shrink: 0; background: #172b42; border-color: #53627a; border-radius: 6px; }
+      .contact-item a { overflow-wrap: anywhere; }
+      .contact-wrap > .panel { background: #101f32; }
+      .skip-link { position: absolute; top: -100px; left: 16px; padding: 12px 18px; background: var(--gold); color: #091321; z-index: 100; }
+      .skip-link:focus { top: 12px; }
+      @media (max-width: 920px) {
+        .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+        .profile-card { width: min(100%, 420px); }
+      }
+      @media (max-width: 620px) {
+        .hero { padding: 36px 0 48px; }
+        .section { padding: 48px 0; }
+        .nav-links { gap: 18px; }
+        .hero-copy h1 { font-size: 2.45rem; }
+        .metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+        .metric { min-width: 0; }
+        .metric strong { font-size: 2rem; }
+        .metric span { font-size: .8rem; }
+        .panel, .impact-box { padding: 22px; }
+        .profile-card { margin-inline: auto; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { transition: none !important; }
+        .btn-primary:hover { transform: none; }
+      }
+
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to main content</a>
     <header class="topbar">
       <div class="container nav">
         <a class="brand" href="#home">Ahmed <span>Darweesh</span></a>
@@ -550,11 +636,11 @@
           <div class="hero-copy">
             <div class="eyebrow">Manufacturing Leader</div>
             <h1>
-              Leading <span class="gradient-text">operational excellence</span><br />
-              in high-volume manufacturing.
+              Manufacturing leadership.<br />
+              <span class="gradient-text">Measurable impact.</span>
             </h1>
             <p>
-              Senior manufacturing and maintenance leader with 18+ years of experience driving productivity, reliability, quality, and continuous improvement across complex factory operations. Proven track record in Lean Manufacturing, automation, TPM, and scaling production from startup to mass production.
+              18+ years leading manufacturing, maintenance, and engineering teams. Improving factory reliability, productivity, and cost through Lean, TPM, and automation.
             </p>
 
             <div class="hero-actions">
@@ -582,31 +668,13 @@
 
           <aside class="profile-card">
             <div class="profile-art">
-              <img src="assets/profile-photo.jpg" alt="Ahmed Darweesh" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'font-size:7rem; width:100%; height:100%; display:grid; place-items:center;\'>🏭</div>'" />
+              <img width="1254" height="1254" fetchpriority="high" src="assets/profile-photo.jpg" alt="Ahmed Darweesh" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'font-size:7rem; width:100%; height:100%; display:grid; place-items:center;\'>🏭</div>'" />
             </div>
             <div class="profile-info">
               <h3>Ahmed Darweesh</h3>
               <div class="title-tag">Manufacturing & Maintenance Senior Manager</div>
               <p>Samsung Electronics Egypt</p>
 
-              <div class="profile-meta">
-                <div class="meta-item">
-                  <span>Location</span>
-                  <strong>Beni Suef, Egypt</strong>
-                </div>
-                <div class="meta-item">
-                  <span>Email</span>
-                  <strong><a href="mailto:eng.ama2003@gmail.com">eng.ama2003@gmail.com</a></strong>
-                </div>
-                <div class="meta-item">
-                  <span>Phone</span>
-                  <strong><a href="tel:+201159888350">+20 115 988 8350</a></strong>
-                </div>
-                <div class="meta-item">
-                  <span>LinkedIn</span>
-                  <strong><a href="https://linkedin.com/in/ahmed-darweesh-62942b116" target="_blank" rel="noopener noreferrer">View profile</a></strong>
-                </div>
-              </div>
             </div>
           </aside>
         </div>
@@ -657,12 +725,13 @@
         <div class="container">
           <div class="section-header">
             <div class="eyebrow">Selected Career Impact</div>
-            <h2>Measured results that moved the business forward.</h2>
+            <h2>Results that matter.</h2>
           </div>
 
           <div class="impact-grid">
             <div class="impact-box">
               <div class="impact-label">Capacity & Savings</div>
+              <div class="impact-number">+16%</div>
               <h3>Production growth with real financial value</h3>
               <ul>
                 <li>Increased production capacity by 16% through Lean Manufacturing and workflow optimization.</li>
@@ -673,6 +742,7 @@
 
             <div class="impact-box">
               <div class="impact-label">Quality & Reliability</div>
+              <div class="impact-number">−35%</div>
               <h3>Reliability improvements that reduced losses</h3>
               <ul>
                 <li>Reduced machine downtime by 35% through targeted maintenance and reliability practices.</li>
@@ -683,6 +753,7 @@
 
             <div class="impact-box">
               <div class="impact-label">Automation</div>
+              <div class="impact-number">62</div>
               <h3>Factory automation with sustainable productivity gains</h3>
               <ul>
                 <li>Led deployment of 62 KUKA robots across eight production lines to improve productivity and consistency.</li>
@@ -693,6 +764,7 @@
 
             <div class="impact-box">
               <div class="impact-label">Recognition</div>
+              <div class="impact-number">2</div>
               <h3>Award-winning performance and execution</h3>
               <ul>
                 <li>Received two Samsung Global Innovation Day Awards, in 2019 and 2022, for manufacturing innovation and engineering excellence.</li>
@@ -708,7 +780,7 @@
         <div class="container">
           <div class="section-header">
             <div class="eyebrow">Professional Experience</div>
-            <h2>Career progression built on execution and leadership.</h2>
+            <h2>Experience across factory operations.</h2>
           </div>
 
           <div class="timeline">
@@ -820,7 +892,7 @@
         <div class="container">
           <div class="section-header">
             <div class="eyebrow">Technical Knowledge</div>
-            <h2>Expertise across automation, maintenance, and operations.</h2>
+            <h2>Technical expertise.</h2>
           </div>
 
           <div class="skill-grid">
@@ -890,7 +962,7 @@
         <div class="container">
           <div class="section-header">
             <div class="eyebrow">Contact</div>
-            <h2>Let’s discuss manufacturing excellence and performance transformation.</h2>
+            <h2>Let’s discuss your next opportunity.</h2>
           </div>
 
           <div class="contact-wrap">
