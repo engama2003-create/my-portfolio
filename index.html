@@ -673,9 +673,9 @@
       .reveal-visible { opacity: 1; transform: none; }
       @media (max-width: 920px) {
         .nav { flex-direction: row; flex-wrap: wrap; justify-content: space-between; padding: 14px 0; gap: 12px; }
-        .menu-toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 5px; color: var(--text); background: #14243a; font: inherit; cursor: pointer; }
-        .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; border-top: 1px solid var(--line); padding-top: 8px; }
-        .nav-links.menu-open { display: flex; }
+        .js .menu-toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 5px; color: var(--text); background: #14243a; font: inherit; cursor: pointer; }
+        .js .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; border-top: 1px solid var(--line); padding-top: 8px; }
+        .js .nav-links.menu-open { display: flex; }
         .nav-links a { padding: 10px 8px; min-height: 44px; }
         .nav-links a::after { bottom: 2px; }
       }
@@ -1090,6 +1090,7 @@
 
     <script>
       (() => {
+        document.documentElement.classList.add('js');
         const toggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('#main-navigation');
         const links = [...nav.querySelectorAll('a[href^="#"]')];
