@@ -652,6 +652,37 @@
       footer { padding-bottom: 100px; }
       @media (max-width: 620px) { .whatsapp-float { right: max(14px, env(safe-area-inset-right)); bottom: max(14px, env(safe-area-inset-bottom)); width: 54px; height: 54px; } }
       @media (prefers-reduced-motion: reduce) { .whatsapp-float:hover { transform: none; } }
+
+      .menu-toggle { display: none; }
+      .nav-links a[aria-current="location"] { color: var(--gold); }
+      .nav-links a[aria-current="location"]::after { width: 100%; }
+      .experience-details summary {
+        width: fit-content; cursor: pointer; color: var(--gold); font-weight: 600;
+        padding: 10px 0; border-radius: 3px; list-style-position: inside;
+      }
+      .experience-details summary:focus-visible, .menu-toggle:focus-visible {
+        outline: 3px solid var(--gold); outline-offset: 4px;
+      }
+      .experience-details[open] summary { margin-bottom: 8px; }
+      .case-study { transition: border-color .2s ease, box-shadow .2s ease; }
+      @media (hover: hover) {
+        .case-study:hover { border-color: var(--gold); box-shadow: 0 0 0 1px rgba(228,197,130,.14); }
+      }
+      .reveal-pending { opacity: 0; transform: translateY(12px); }
+      .reveal-ready { transition: opacity .4s ease, transform .4s ease; }
+      .reveal-visible { opacity: 1; transform: none; }
+      @media (max-width: 920px) {
+        .nav { flex-direction: row; flex-wrap: wrap; justify-content: space-between; padding: 14px 0; gap: 12px; }
+        .menu-toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 5px; color: var(--text); background: #14243a; font: inherit; cursor: pointer; }
+        .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; border-top: 1px solid var(--line); padding-top: 8px; }
+        .nav-links.menu-open { display: flex; }
+        .nav-links a { padding: 10px 8px; min-height: 44px; }
+        .nav-links a::after { bottom: 2px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-pending, .reveal-ready, .reveal-visible { opacity: 1; transform: none; transition: none; }
+      }
+
     </style>
   </head>
   <body>
@@ -659,7 +690,8 @@
     <header class="topbar">
       <div class="container nav">
         <a class="brand" href="#home">Ahmed <span>Darweesh</span></a>
-        <nav class="nav-links" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu <span aria-hidden="true">☰</span></button>
+        <nav id="main-navigation" class="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#impact">Impact</a>
           <a href="#projects">Projects</a>
@@ -870,14 +902,14 @@
                 <span class="date-pill">Jan 2025 – Present</span>
               </div>
               <div class="timeline-location">Beni Suef, Egypt</div>
-              <ul>
+              <details class="experience-details"><summary>View responsibilities &amp; achievements</summary><ul>
                 <li>Lead maintenance and reliability operations across 42 production lines covering TV Assembly, LCM, Press, Injection, EPS, Bonding, and Powder Coating, directing 54 engineers and technicians.</li>
                 <li>Manage approximately US$1.5M in annual CAPEX and spare-parts expenditure and coordinate equipment upgrades with Production, Quality, Engineering, Supply Chain, and suppliers.</li>
                 <li>Led installation, commissioning, maintenance setup, and production stabilization for new Bonding and Powder Coating technologies through quality audit and mass-production release.</li>
                 <li>Established preventive and predictive maintenance strategies for equipment platforms with no previous maintenance history, improving MTBF by 21%.</li>
                 <li>Reduced spare-parts cost by 15% through planning, localization, inventory control, and demand forecasting.</li>
                 <li>Built and developed maintenance teams through recruitment, technical training, coaching, and structured capability development.</li>
-              </ul>
+              </ul></details>
             </article>
 
             <article class="timeline-item">
@@ -889,13 +921,13 @@
                 <span class="date-pill">Aug 2023 – Jan 2025</span>
               </div>
               <div class="timeline-location">Beni Suef, Egypt</div>
-              <ul>
+              <details class="experience-details"><summary>View responsibilities &amp; achievements</summary><ul>
                 <li>Led integrated Mobile and Tablet manufacturing operations across Production, Maintenance, Quality Engineering, Product Engineering, and In-house Logistics, directing approximately 320 employees.</li>
                 <li>Increased production capacity by 16% through Lean Manufacturing and resource optimization, contributing approximately US$500K in annual operating savings.</li>
                 <li>Reduced machine downtime by 35% through reliability improvement and improved the overall manufacturing defect rate by 22% through process control and structured problem-solving.</li>
                 <li>Reduced Tablet defects from approximately 24,000 PPM to 6,000 PPM (75% reduction in Tablet defect PPM) through incoming-quality controls, defect mapping, root-cause analysis, and team engagement.</li>
                 <li>Managed productivity, quality, loss, scrap, delivery, and equipment KPIs while supporting CEO-level manufacturing transformation initiatives.</li>
-              </ul>
+              </ul></details>
             </article>
 
             <article class="timeline-item">
@@ -907,7 +939,7 @@
                 <span class="date-pill">Dec 2012 – Jul 2023</span>
               </div>
               <div class="timeline-location">Beni Suef, Egypt</div>
-              <ul>
+              <details class="experience-details"><summary>View responsibilities &amp; achievements</summary><ul>
                 <li>Directed Production Technology and Manufacturing Engineering across TV Final Assembly, LCM, Press, and CKD/SKD/MKD operations, leading 53 engineers and technicians.</li>
                 <li>Led manufacturing setup, equipment installation, commissioning, and ramp-up of the VD facility from empty building to mass-production readiness.</li>
                 <li>Commissioned 14 production lines, including seven TV Main Assembly and seven LCM lines, and achieved target production capacity of 12,000 units/day on schedule.</li>
@@ -916,7 +948,7 @@
                 <li>Introduced AGVs for internal material transport, reducing logistics workforce requirements by 25%.</li>
                 <li>Established Mobile and Tablet manufacturing lines on an accelerated schedule and delivered production readiness by the planned launch date.</li>
                 <li>Received Samsung Global Innovation Day Awards in 2019 and 2022 for manufacturing innovation and engineering excellence.</li>
-              </ul>
+              </ul></details>
             </article>
 
             <article class="timeline-item">
@@ -928,9 +960,9 @@
                 <span class="date-pill">Jul 2011 – Dec 2012</span>
               </div>
               <div class="timeline-location">Beni Suef, Egypt</div>
-              <ul>
+              <details class="experience-details"><summary>View responsibilities &amp; achievements</summary><ul>
                 <li>Led preventive and predictive maintenance planning, major shutdowns, scheduled maintenance, and equipment overhauls to improve plant availability and maintenance cost performance.</li>
-              </ul>
+              </ul></details>
             </article>
 
             <article class="timeline-item">
@@ -942,10 +974,10 @@
                 <span class="date-pill">Jul 2008 – Jul 2011</span>
               </div>
               <div class="timeline-location">Beni Suef, Egypt</div>
-              <ul>
+              <details class="experience-details"><summary>View responsibilities &amp; achievements</summary><ul>
                 <li>Improved productivity on two lines by converting the final dehydration stage from steam heating to a burner-based indirect heating system.</li>
                 <li>Designed a microcontroller-based control system for the industrial water-treatment unit and supported ISO, HACCP, and BRC compliance.</li>
-              </ul>
+              </ul></details>
             </article>
 
             <article class="timeline-item">
@@ -957,9 +989,9 @@
                 <span class="date-pill">Oct 2007 – Jul 2008</span>
               </div>
               <div class="timeline-location">Giza, Egypt</div>
-              <ul>
+              <details class="experience-details"><summary>View responsibilities &amp; achievements</summary><ul>
                 <li>Installed and commissioned elevator control systems using Siemens S7-200 PLCs, inverters, and associated electrical-control components.</li>
-              </ul>
+              </ul></details>
             </article>
           </div>
         </div>
@@ -1055,5 +1087,57 @@
     <a class="whatsapp-float" href="https://wa.me/201159888350" target="_blank" rel="noopener noreferrer" aria-label="Chat with Ahmed Darweesh on WhatsApp" title="Chat on WhatsApp">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.47 0 .11 5.35.1 11.93c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.96 11.96 0 0 0 5.8 1.48h.01c6.58 0 11.94-5.35 11.94-11.93a11.86 11.86 0 0 0-3.48-8.43ZM12.06 21.82a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.71.97.99-3.61-.24-.38a9.9 9.9 0 0 1-1.52-5.27C2.17 6.47 6.61 2.03 12.06 2.03a9.84 9.84 0 0 1 7.03 2.91A9.84 9.84 0 0 1 22 11.94c0 5.45-4.45 9.88-9.94 9.88Zm5.45-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.11 4.51.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
     </a>
+
+    <script>
+      (() => {
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('#main-navigation');
+        const links = [...nav.querySelectorAll('a[href^="#"]')];
+        const closeMenu = () => { nav.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); };
+        toggle.addEventListener('click', () => {
+          const open = toggle.getAttribute('aria-expanded') !== 'true';
+          toggle.setAttribute('aria-expanded', String(open));
+          nav.classList.toggle('menu-open', open);
+        });
+        links.forEach(link => link.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', event => {
+          if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { closeMenu(); toggle.focus(); }
+        });
+        const mobile = matchMedia('(max-width: 920px)');
+        mobile.addEventListener('change', closeMenu);
+        const sections = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+        let scheduled = false;
+        const highlight = () => {
+          const boundary = document.querySelector('.topbar').getBoundingClientRect().bottom + 90;
+          let current = null;
+          sections.forEach(section => { if (section.getBoundingClientRect().top <= boundary) current = section.id; });
+          if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) current = sections.at(-1).id;
+          links.forEach(link => {
+            if (link.getAttribute('href') === '#' + current) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+          scheduled = false;
+        };
+        addEventListener('scroll', () => { if (!scheduled) { scheduled = true; requestAnimationFrame(highlight); } }, { passive: true });
+        addEventListener('resize', highlight);
+        highlight();
+        const motion = matchMedia('(prefers-reduced-motion: reduce)');
+        if ('IntersectionObserver' in window && !motion.matches) {
+          const elements = [...document.querySelectorAll('.section-header, .case-study, .skill-card')];
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('reveal-visible'); observer.unobserve(entry.target); } });
+          }, { threshold: 0.08 });
+          elements.forEach(element => {
+            if (element.getBoundingClientRect().top > innerHeight) {
+              element.classList.add('reveal-pending', 'reveal-ready');
+              observer.observe(element);
+            }
+          });
+          motion.addEventListener('change', event => { if (event.matches) { elements.forEach(element => element.classList.add('reveal-visible')); observer.disconnect(); } });
+          addEventListener('beforeprint', () => elements.forEach(element => element.classList.add('reveal-visible')));
+        }
+      })();
+    </script>
+
   </body>
 </html>
